@@ -1,0 +1,2 @@
+index,fib
+<%= for {fib, index} <- Enum.with_index(@fib_list), do: "#{index},#{fib}\n" %>
