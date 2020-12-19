@@ -5,11 +5,11 @@ defmodule MixSample.Fib do
   end
 
   def fib_list(1) do
-    [1, 0]
+    [0, 1]
   end
 
   def fib_list(n) do
-    2..n |> Enum.reduce([1, 0], fn _, acc -> fib_sum(acc) ++ acc end)
+    2..n |> Enum.reduce([1, 0], fn _, acc -> fib_sum(acc) ++ acc end) |> Enum.reverse()
   end
 
   defp fib_sum([a | [b | _]]), do: [a + b]
