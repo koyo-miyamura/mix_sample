@@ -1,6 +1,6 @@
 # MixSample
 
-**TODO: Add description**
+My Mix.Tasks sample
 
 ## Installation
 
